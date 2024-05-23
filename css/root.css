@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* TODO:Global Css Start */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/* TODO:Global Css End */
+
+:root {
+  /* Google Font */
+  --primary-font: "Inter", sans-serif;
+  /* Theme Color */
+  --primary-color: #ff8100;
+  --secondary-color: #111111;
+  --gray-color: #f5f6f6;
+  --secondary-dark-color: #555;
+  --footer-color: #B4B6BB;
+  --white-color: #fff;
+  --bg-primary: #f7f5ef;
+  --red-color: #eb001b;
+  --text-color: #16171c;
+  --text-secondary-color: #363a45;
+  --white-gray: #efeee8;
+  --primary-transition: all 0.3s ease-in-out;
+  /* Font Size */
+  --primary-font-size: 3em;
+  --primary-font-mobile-size: 1.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+span,
+label,
+input,
+textarea,
+select,
+a {
+  font-family: var(--primary-font);
+}
+
+body {
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: var(--primary-transition);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* TODO: Global Css Start */
+.container {
+  max-width: 82.5em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.sec_padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+/* TODO: Global Css End */
+.text-color {
+  color: var(--text-color);
+}
+
+.app_button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffff;
+  transition: all 0.5s ease-in-out;
+  padding: 1em 2em;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 1em;
+}
+.app_btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: green;
+  color: #ffff;
+  transition: all 0.5s ease-in-out;
+  padding: 1em 2em;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 1em;
+}
+
+ .app_button:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  outline: none;
+} 
+.app_button_outline {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: 1px solid var(--text-color);
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+  padding: 1em 2em;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 1em;
+}
+
+.app_button_outline:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  outline: none;
+} 
