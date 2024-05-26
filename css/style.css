@@ -282,6 +282,7 @@ button.post_btn {
 .post_concect p {
   font-size: 17px;
   max-width: 367px;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 .right_side{
@@ -300,4 +301,159 @@ button.post_btn {
 }
 .like i{
   color: rgb(60, 15, 165);
+}
+
+.search_box.hidden{
+  display: none;
+}
+
+/* Modal Post */
+
+div#file-list img {
+  width: 25%;
+  border-radius: 10px;
+}
+
+div#file-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.add_img {
+  cursor: pointer;
+  padding-bottom: 1em;
+}
+
+.post_modal_wrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  z-index: 1000000;
+  display: none;
+  transition: display 0.5s ease-in-out;
+}
+
+.post_modal_wrapper.active{
+  display: block;
+}
+
+.post_modal_header {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.post_modal_header .d-flex{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+img.modal_post_profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000086;
+  z-index: 10000;
+  transition: display 0.5s ease-in-out;
+  display: none;
+}
+
+.backdrop.active{
+  display: block;
+}
+
+textarea.post_box {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  margin-top: 2em;
+  resize: none;
+}
+
+.add_img.hidden{
+  display: none;
+}
+
+.error-message {
+  color: red;
+}
+
+.post_end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: 1px solid #dddddd81;
+  padding-top: 1em;
+}
+
+@media (max-width:550px){
+  .navbar{
+    gap: 2.5em;
+  }
+  .sidebar{
+    display: none;
+  }
+  .nav-item.active i{
+    font-size: 20px !important;
+  }
+
+  .search_box.hidden i{
+    font-size: 20px !important;
+  }
+
+  img.nav-icon {
+    width: 25px !important;
+}
+}
+
+@media(max-width:768px){
+  .right_side{
+    display: none;
+  }
+  .post-creation-container {
+    flex: 1;
+}
+
+.search_box {
+    display: none;
+}
+
+.nav-item span {
+    display: none;
+}
+
+.nav-item.active i{
+  font-size: 25px;
+}
+.navbar{
+  padding: 1em 1.5em;
+}
+
+img.nav-icon {
+    width: 30px;
+}
+.search_box.hidden{
+  display: block;
+  padding: 0px;
+  background-color: transparent;
+}
+.search_box.hidden i{
+  font-size: 25px;
+}
 }

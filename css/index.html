@@ -14,6 +14,37 @@
 </head>
 
 <body>
+    <!-- Post Modal Start  -->
+    <div class="backdrop"></div>
+    <div class="post_modal_wrapper">
+        <div class="post_modal_header">
+            <div class="d-flex">
+                <img src="../images/rakib.jpg" alt="Rakib Khanom" class="modal_post_profile">
+                <div>
+                    <h4>Rakib Khanom</h4>
+                    <p>Post Anyone</p>
+                </div>
+            </div>
+        </div>
+        <div style="height: 300px; overflow-y: scroll;">
+            <textarea class="post_box" name="" id="" placeholder="What do you want to talk about?"></textarea>
+            <div class="file-list" id="file-list"></div>
+        </div>
+
+        <!-- Image -->
+        <label for="file_input">
+            <div class="add_img">
+                <i style="font-size: 2em;" class="fa-solid fa-image"></i>
+            </div>
+            <div class="error-message" id="error-message"></div>
+            <input type="file" name="" multiple="true" id="file_input" class="hidden" hidden>
+        </label>
+        <!-- Image -->
+        <div class="post_end">
+            <button disabled class="app_btn post_button">Post</button>
+        </div>
+    </div>
+    <!-- Post Modal End -->
     <!-- nav section start -->
     <div class="navbar">
         <!-- navbar left -->
@@ -23,30 +54,31 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search" class="search-bar">
             </div>
-          </div>
-          <!-- navbar right -->
+            <div class="search_box hidden">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <!-- navbar right -->
         <div class="navbar-right">
             <div class="nav-item active">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </div>
             <div class="nav-item">
-                <img src="/images/669662_my_space_line-icon_network_social_icon.svg" alt="My Network" class="nav-icon">
+                <img src="/images/user png-output.png" alt="network" class="nav-icon">
                 <span>My Network</span>
             </div>
             <div class="nav-item">
-                <img src="/images/897229_craiglist_find job_jobs_vacancy_icon.svg" alt="Jobs" class="nav-icon">
+                <img src="/images/svgviewer-png-output.png" alt="Jobs" class="nav-icon">
                 <span>Jobs</span>
             </div>
             <div class="nav-item">
-                <img src="/images/100276_messaging_icon.png" alt="Messaging" class="nav-icon">
+                <img src="/images/svgviewer-png-output (1).png" alt="Messaging" class="nav-icon">
                 <span>Messaging</span>
             </div>
             <div class="nav-item">
-                <img src="/images/4850517_alert_bell_notification_ring_snooze_icon.png" alt="Notifications"
-                    class="nav-icon">
+                <img src="/images/svgviewer-png-output (2).png" alt="Notifications" class="nav-icon">
                 <span>Notifications</span>
-                <span class="notification-badge"></span>
             </div>
             <div class="nav-item">
                 <img src="/images/rakib.jpg" alt="Me" class="profile-photo">
@@ -117,6 +149,8 @@
                     </div>
                 </div>
             </div>
+
+            <div id="posts-container">
             <!-- main section -->
             <div class="main-content">
                 <div class="feed-item">
@@ -126,7 +160,7 @@
                         <div class="post_contant">
                             <div class="div">
                                 <h3>Md Rakib Hossain</h3>
-                            <h6>Manager, Human Resources ll MBA (HRM) ll LLB ll CODP</h6>
+                                <h6>Manager, Human Resources ll MBA (HRM) ll LLB ll CODP</h6>
                             </div>
                             <a href="#">+Follow</a>
                         </div>
@@ -168,106 +202,7 @@
 
                 </div>
             </div>
-            <div class="main-content">
-                <div class="feed-item">
-                    <div class="post_img">
-                        <img src="/images/rakib.jpg" alt="">
-
-                        <div class="post_contant">
-                            <div class="div">
-                            <h3>Md Rakib Hossain</h3>
-                            <h6>Manager, Human Resources ll MBA (HRM) ll LLB ll CODP</h6>
-                            </div>
-                            <a href="#">+Follow</a>
-                        </div>
-                    </div>
-                    <div class="post_concect">
-                        <p>Alhamdulillah.
-                            Finally Passed Bachelor of Law (LLB) exam and scored top in all Law colleges in Bangladesh
-                            from National University.</p>
-                        <img src="/images/rakib.jpg" alt="">
-                        <div class="post_like_wrapper">
-                            <div class="like">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-comment"></i>
-                            </div>
-                            <div class="comment">
-                                <p>597 comments .2 reposts</p>
-                            </div>
-                        </div>
-                        <div class="post_comment_wrapeer">
-                            <button class="post_btn">
-                                <img src="/images/right.png" alt="">
-                                <span>Like</span>
-                            </button>
-                            <button class="post_btn">
-                                <img src="/images/comment.png" alt="">
-                                <span>Comment</span>
-                            </button>
-                            <button class="post_btn">
-                                <img src="/images/repost.png" alt="">
-                                <span>Repost</span>
-                            </button>
-                            <button class="post_btn">
-                                <img src="/images/send.png" alt="">
-                                <span>Send</span>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="main-content">
-                <div class="feed-item">
-                    <div class="post_img">
-                        <img src="/images/rakib.jpg" alt="">
-
-                        <div class="post_contant">
-                            <div class="div">
-                            <h3>Md Rakib Hossain</h3>
-                            <h6>Manager, Human Resources ll MBA (HRM) ll LLB ll CODP</h6>
-                            </div>
-                            <a href="#">+Follow</a>
-                        </div>
-                    </div>
-                    <div class="post_concect">
-                        <p>Alhamdulillah.
-                            Finally Passed Bachelor of Law (LLB) exam and scored top in all Law colleges in Bangladesh
-                            from National University.</p>
-                        <img src="/images/rakib.jpg" alt="">
-                        <div class="post_like_wrapper">
-                            <div class="like">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-comment"></i>
-                            </div>
-                            <div class="comment">
-                                <p>597 comments .2 reposts</p>
-                            </div>
-                        </div>
-                        <div class="post_comment_wrapeer">
-                            <button class="post_btn">
-                                <img src="/images/right.png" alt="">
-                                <span>Like</span>
-                            </button>
-                            <button class="post_btn">
-                                <img src="/images/comment.png" alt="">
-                                <span>Comment</span>
-                            </button>
-                            <button class="post_btn">
-                                <img src="/images/repost.png" alt="">
-                                <span>Repost</span>
-                            </button> 
-                            <button class="post_btn">
-                                <img src="/images/send.png" alt="">
-                                <span>Send</span>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        </div>
 
         </div>
         <!-- main section end -->
@@ -323,9 +258,12 @@
                     </div>
                 </footer>
             </div>
-           
+
         </div>
     </div>
 </body>
+
+
+<script src="../js/index.js"></script>
 
 </html>
